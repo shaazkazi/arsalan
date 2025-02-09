@@ -8,15 +8,7 @@ export const stories = {
       audioUrl: "https://archive.org/download/twinkle-twinkle-little-star/5bftlBRr-y2matecom-twinkle-twinkle-little-star.mp3",  // Add this line
       content: [
         "🌟 Twinkle, twinkle, little star,\nHow I wonder what you are!",
-        "⭐ Up above the world so high,\nLike a diamond in the sky.",
-        "🌅 When the blazing sun is gone,\nWhen he nothing shines upon,",
-        "✨ Then you show your little light,\nTwinkle, twinkle, all the night.",
-        "🌙 Then the traveler in the dark\nThanks you for your tiny spark,",
-        "🔦 How could he see where to go,\nIf you did not twinkle so?",
-        "🌃 In the dark blue sky you keep,\nOften through my curtains peep",
-        "👀 For you never shut your eye,\nTill the sun is in the sky.",
-        "💫 As your bright and tiny spark\nLights the traveler in the dark,",
-        "🌠 Though I know not what you are,\nTwinkle, twinkle, little star."
+        "⭐ Up above the world so high,\nLike a diamond in the sky."
       ]
     },
     2: {
@@ -40,12 +32,7 @@ export const stories = {
       featuredImage: "https://i.ytimg.com/vi/0qeD0MstppI/hq720.jpg",
       content: [
         "🏰 Humpty Dumpty sat on a wall,\nHumpty Dumpty had a great fall.",
-        "👑 All the king's horses and all the king's men,\nCouldn't put Humpty together again!",
-        "🐎 They galloped and rushed with all their might,\nTrying to fix poor Humpty's plight.",
-        "💫 The horses they neighed, the men they tried,\nBut poor Humpty Dumpty just sat there and sighed.",
-        "🌟 But Humpty was brave and didn't feel blue,\nHe smiled and said 'I'll make something new!'",
-        "✨ Though his shell was cracked, his spirit stayed strong,\nHe knew in his heart where he would belong.",
-        "🌈 So remember dear friends as you walk by the wall,\nSometimes the best stories start with a fall!"
+        "👑 All the king's horses and all the king's men,\nCouldn't put Humpty together again!"
       ]
     },
     4: {
@@ -56,9 +43,7 @@ export const stories = {
       featuredImage: "https://i.ytimg.com/vi/8Iqhqj5ZG3I/hq720.jpg",
       content: [
         "⛰️ Jack and Jill went up the hill,\nTo fetch a pail of water.",
-        "😮 Jack fell down and broke his crown,\nAnd Jill came tumbling after.",
-        "🏃 Up Jack got, and home did trot,\nAs fast as he could caper.",
-        "👵 To old Dame Dob, who patched his nob\nWith vinegar and brown paper."
+        "😮 Jack fell down and broke his crown,\nAnd Jill came tumbling after."
       ]
     }
   };
