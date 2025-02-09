@@ -39,3 +39,168 @@ body {
 body {
     font-family: 'Nunito', sans-serif;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.dark .bg-white {
+  @apply bg-gray-800;
+}
+
+.dark .text-gray-600 {
+  @apply text-gray-300;
+}
+
+.dark .text-gray-700 {
+  @apply text-gray-200;
+}
+
+/* Magical Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes sparkle {
+  0% { transform: scale(0) rotate(0deg); }
+  50% { transform: scale(1) rotate(180deg); }
+  100% { transform: scale(0) rotate(360deg); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px rgba(139, 92, 246, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(236, 72, 153, 0.8); }
+  100% { text-shadow: 0 0 5px rgba(139, 92, 246, 0.5); }
+}
+
+/* Utility Classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 1s ease-in-out;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Interactive Elements */
+.story-text {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.story-text:hover {
+  @apply animate-glow;
+  transform: scale(1.02);
+}
+
+/* Page Transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
+/* Theme Transitions */
+.theme-transition {
+    @apply transition-all duration-500;
+  }
+  
+  .dark {
+    @apply bg-gray-900 text-white theme-transition;
+  }
+  
+  /* Character Animations */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .character {
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  /* Story Progress Bar */
+  .progress-bar {
+    @apply fixed top-0 left-0 h-2 bg-gradient-to-r from-purple-500 to-pink-500;
+    transition: width 0.3s ease;
+  }
+  /* Mobile-first responsive design */
+@media (max-width: 768px) {
+    .text-4xl {
+      font-size: 2rem;
+    }
+    
+    .max-w-7xl {
+      padding: 0 1rem;
+    }
+    
+    .sticky-header {
+      padding: 0.5rem;
+    }
+    
+    .button-group {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
+  
+  /* Font resizer styles with dark mode support */
+  .font-size-selector {
+    @apply px-3 py-1.5 rounded-full transition-colors duration-200;
+    @apply bg-gray-100 dark:bg-gray-700;
+    @apply text-gray-800 dark:text-gray-200;
+    @apply border border-transparent hover:border-purple-500;
+  }
+  
+  /* Enhanced mobile buttons */
+  .action-button {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200;
+    @apply hover:scale-105 active:scale-95;
+  }
+  
+  /* Dark mode enhancements */
+  .dark .action-button {
+    @apply bg-gray-700 text-gray-200;
+  }
+  
+  /* Responsive text sizing */
+  .text-size-xl {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  
+  .text-size-2xl {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+  }
+  
+  .text-size-3xl {
+    font-size: clamp(1.5rem, 3.5vw, 1.875rem);
+  }
+  
